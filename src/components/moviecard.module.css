@@ -1,13 +1,16 @@
-.moviegrid:hover .movieimage{
-  -webkit-filter: blur(1px);
-	filter: blur(1px);
+#articles article:hover .movieimage{
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
   opacity: 0.5;
 }
 
 .movieimage {
+  position: absolute;
+  display: block;
   border: 1px solid black;
   background-color: gray;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
+  z-index: -1
 }
 
 a:link { text-decoration: none; }
@@ -23,15 +26,15 @@ a:active { text-decoration: none; }
 
 .moreInfo {
   position: relative;
-  z-index: 2;
+  z-index: 100;
   width: 90%;
+  height: 405px;
   padding: 10% 10px 15px 15px;
-  margin-top: -10rem;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -ms-transition: opacity .2s ease-in-out;
   transition: bottom .1s ease-in-out, opacity .25s ease-in-out;
-  bottom: -10px;
+  bottom: -20px;
   opacity: 0;
 }
 
