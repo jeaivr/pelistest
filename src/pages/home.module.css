@@ -1,0 +1,13 @@
+.moviesgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    margin: 0px;
+  }
+  
+  /* @media (max-width: 560px) {
+      .moviesgrid {
+          grid-template-columns: 100%;
+      }
+  } */
+  
