@@ -5,9 +5,9 @@
     margin: 0px;
   }
   
-  /* @media (max-width: 560px) {
-      .moviesgrid {
-          grid-template-columns: 100%;
-      }
-  } */
+  @media (max-width: 560px) {
+    .moviesgrid {
+        grid-template-columns: 100%;
+    }
+}
   
