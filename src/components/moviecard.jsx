@@ -25,13 +25,15 @@ export function MovieCard({ movie }) {
           alt={movie.title}
         />
         <div className={styles.moreInfo}>
-          <span className={styles.release}>
-            {movie.release_date.substr(0, 4)}
-          </span>
-          <b className={styles.title}>{movie.title}</b>
-          <span>
-            <b>{movie.genre_ids.map((genre) => replace(genre)).join(", ")}</b>
-          </span>
+          <div className={styles.details}>
+            <span className={styles.release}>
+              {movie.release_date.substr(0, 4)}
+            </span>
+            <b className={styles.title}>{movie.title}</b>
+            <span>
+              <b>{movie.genre_ids.map((genre) => replace(genre)).join(", ")}</b>
+            </span>
+          </div>
         </div>
       </article>
     </div>

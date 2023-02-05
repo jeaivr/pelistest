@@ -1,6 +1,6 @@
-#articles article:hover .movieimage{
+#articles article:hover .movieimage {
   -webkit-filter: blur(3px);
-	filter: blur(3px);
+  filter: blur(3px);
   opacity: 0.5;
 }
 
@@ -10,19 +10,29 @@
   border: 1px solid black;
   background-color: gray;
   margin-bottom: 100px;
-  z-index: -1
+  z-index: -1;
 }
 
-a:link { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
 
-a:visited { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
+a:active {
+  text-decoration: none;
+}
 
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
+.details {
+  position: absolute;
+  bottom: 30px;
+}
 
 .moreInfo {
   position: relative;
@@ -30,21 +40,21 @@ a:active { text-decoration: none; }
   width: 90%;
   height: 405px;
   padding: 10% 10px 15px 15px;
-  -webkit-transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -ms-transition: opacity .2s ease-in-out;
-  transition: bottom .1s ease-in-out, opacity .25s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: bottom 0.1s ease-in-out, opacity 0.25s ease-in-out;
   bottom: -20px;
   opacity: 0;
 }
 
 #articles article:hover .moreInfo {
   opacity: 1;
-  bottom: 0
+  bottom: 0;
 }
 
 #articles article a:hover:before {
-  opacity: 1
+  opacity: 1;
 }
 
 .release {
@@ -72,7 +82,7 @@ a:active { text-decoration: none; }
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
-  -webkit-line-clamp: 2
+  -webkit-line-clamp: 2;
 }
 
 .moreInfo span {
@@ -86,11 +96,11 @@ a:active { text-decoration: none; }
   width: -moz-available;
   width: -webkit-fill-available;
   width: fill-available;
-  display: block
+  display: block;
 }
 
 .moreInfo span b {
   font-weight: 400;
   margin: 0 15px 0 0;
-  font-size: 15px
+  font-size: 15px;
 }
