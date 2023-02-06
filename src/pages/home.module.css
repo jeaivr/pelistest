@@ -4,14 +4,9 @@
   justify-content: center;
   margin: 0px;
   padding-left: 0;
+  margin-left: 55px;
 }
 
 ul {
   margin-bottom: 0px;
-}
-
-@media (max-width: 560px) {
-  .moviesgrid {
-    grid-template-columns: 100%;
-  }
 }
