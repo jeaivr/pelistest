@@ -4,4 +4,5 @@ que miras osFrog
 
 ## Live
 
-[live repository](https://pelistest.netlify.app)
+[github live repository](https://jeaivr.github.io/pelistest)
+[netlify live repository](https://pelistest.netlify.app)
