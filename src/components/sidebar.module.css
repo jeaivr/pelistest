@@ -485,3 +485,35 @@ header nav .newVers {
 .icon_userSet:hover, header nav a:hover, header nav i:hover {
     background-color: #9cacdb
 }
+
+.close {
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 4%;
+    left: 50%;
+    margin-left: 230px;
+}
+
+.close:hover {
+    color: #9cacdb;
+}
+
+.close a{
+    font-size: 30px;
+}
+
+@media (max-width: 560px) {
+    .close {
+        margin-left: 135px;
+        top: 25px;
+    }
+
+    .close a{
+        font-size: 25px;
+    }
+    
+  }
