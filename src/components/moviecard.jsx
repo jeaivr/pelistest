@@ -27,7 +27,7 @@ export function MovieCard({ movie }) {
         <div className={styles.moreInfo}>
           <div className={styles.details}>
             <span className={styles.release}>
-              {movie.release_date.substr(0, 4)}
+              {movie.release_date ? movie.release_date.substr(0, 4) : ""}
             </span>
             <b className={styles.title}>{movie.title}</b>
             <span>

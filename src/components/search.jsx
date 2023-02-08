@@ -36,7 +36,7 @@ export function Search(props) {
         <form className={styles.searchContainer} onSubmit={handleSubmit}>
           <div className={styles.searchBox}>
             <input
-              autofocus
+              autoFocus
               className={styles.searchInput}
               type="text"
               value={searchText}
