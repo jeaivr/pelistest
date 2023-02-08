@@ -23,6 +23,19 @@ header {
     cursor: pointer;
 }
 
+a.iconactive {
+    color: #25b1f0;
+}
+
+.iconplay {
+    font-size: 37px;
+    margin-bottom: -10px;
+}
+
+.iconfilter {
+    font-weight: bold;
+}
+
 .iconcontact {
     display: block;
     position: relative;

@@ -1,6 +1,6 @@
 import styles from "./sidebar.module.css";
-import { BiMoviePlay, BiSearch } from "react-icons/bi";
-import { GoSettings } from "react-icons/go";
+import { BsPlay } from "react-icons/bs";
+import { MdFilterList } from "react-icons/md";
 import { FiInfo, FiUser, FiSettings } from "react-icons/fi";
 import { BiSearchAlt } from "react-icons/bi";
 
@@ -8,11 +8,11 @@ export function SideMenu() {
   return (
     <div>
       <header>
-        <a className={styles.icon} active>
-          <BiMoviePlay />
+        <a className={styles.icon + ' ' + styles.iconplay + ' ' + styles.iconactive} autofocus>
+          <BsPlay />
         </a>
-        <a className={styles.icon} active>
-          <GoSettings />
+        <a className={styles.icon + ' ' + styles.iconfilter}>
+          <MdFilterList />
         </a>
         <a className={styles.icon}>
           <BiSearchAlt />
@@ -27,7 +27,7 @@ export function SideMenu() {
 			<FiInfo />
 			</a>
         <b className={styles.alpha}>Alfa</b>
-        <p className={styles.version}>© 2017</p>
+        <p className={styles.version}>© 2019</p>
       </header>
     </div>
   );
