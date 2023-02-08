@@ -1,9 +1,8 @@
 import styles from "./sidebar.module.css";
 import { BiMoviePlay, BiSearch } from "react-icons/bi";
 import { GoSettings } from "react-icons/go";
-import { FiSave, FiInfo, FiUser } from "react-icons/fi";
+import { FiInfo, FiUser, FiSettings } from "react-icons/fi";
 import { BiSearchAlt } from "react-icons/bi";
-import { MdOutlineContactSupport } from "react-icons/md";
 
 export function SideMenu() {
   return (
@@ -22,7 +21,7 @@ export function SideMenu() {
           <FiUser />
         </a>
         <a className={styles.icon + " " + styles.iconcontact}>
-          <MdOutlineContactSupport />
+          <FiSettings />
         </a>
         <a className={styles.icon + " " + styles.iconinfo}>
 			<FiInfo />
