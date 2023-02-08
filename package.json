@@ -1,6 +1,5 @@
 {
   "name": "pelistest",
-  "homepage": "https://jeaivr.github.io/pelistest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
