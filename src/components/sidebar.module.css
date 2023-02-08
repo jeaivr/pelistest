@@ -23,6 +23,31 @@ header {
     cursor: pointer;
 }
 
+.iconcontact {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin: 0 0 20px 18px;
+    position: absolute;
+    bottom: 95px
+}
+
+.iconinfo {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin: 0 0 20px 18px;
+    position: absolute;
+    bottom: 50px;
+    font-size: 27px;
+}
+
 .icon:hover {
     color: #9cacdb;
 }
@@ -407,11 +432,6 @@ header nav .newVers {
 }
 
 .icon_version {
-    -webkit-mask: url(https://cdn.jsdelivr.net/gh/cooz-co/cooz/src/version.svg) no-repeat 100% 100%;
-    mask: url(https://cdn.jsdelivr.net/gh/cooz-co/cooz/src/version.svg) no-repeat 100% 100%;
-    -webkit-mask-size: 26px;
-    background-color: #5a637d;
-    background-size: contain;
     mask-size: 26px;
     display: block;
     position: relative;
