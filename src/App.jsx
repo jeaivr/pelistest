@@ -1,5 +1,5 @@
 import styles from "./App.module.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import { Home } from "./pages/home.jsx";
 import { SideMenu } from "./components/sidebar.jsx";
 import { LandingPage } from "./pages/landingpage";
@@ -11,10 +11,14 @@ export function App() {
     <Router>
       <div>
         <header>
-          <Link to="/"></Link>
+          
         </header>
         <main>
           <Switch>
+            <Route exact path="/pelistest">
+              <Redirect to="/" />
+            </Route>
+            
             {/* <Route exact path="/movies/:movieId">
               <MovieDetails />
             </Route> */}
