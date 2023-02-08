@@ -6,6 +6,7 @@ import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { Search } from "./search";
+import { Link } from "react-router-dom";
 
 export function SideMenu() {
   const [show, setShow] = useState(false);
@@ -24,18 +25,21 @@ export function SideMenu() {
               <RiCloseCircleLine />
             </a>
           </div>
-          <Search />
+          <Search setValue={setShow}/>
         </>
       ) : null}
       <header>
-        <a
-          className={
-            styles.icon + " " + styles.iconplay + " " + styles.iconactive
-          }
-          autofocus
-        >
-          <BsPlay />
-        </a>
+        <Link to="/">
+          <a
+            className={
+              styles.icon + " " + styles.iconplay + " " + styles.iconactive
+            }
+            autofocus
+          >
+            <BsPlay />
+          </a>
+        </Link>
+
         <a className={styles.icon + " " + styles.iconfilter}>
           <MdFilterList />
         </a>
