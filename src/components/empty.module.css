@@ -1,7 +1,7 @@
 .empty {
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     z-index: 100;
     top: 10%;
     left: 50%;
@@ -13,8 +13,27 @@
     margin-right: 100px;
 }
 
+.empty2 {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    z-index: 100;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: 60%;
+    white-space: normal;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
 @media (max-width: 560px) {
-    .empty {
+    .empty, .empty2 {
         font-size: 1.5rem;
+    }
+
+    .empty2 {
+        top: 25%;
     }
 }

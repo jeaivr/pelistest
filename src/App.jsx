@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./pages/home.jsx";
 import { SideMenu } from "./components/sidebar.jsx";
 import { LandingPage } from "./pages/landingpage";
+import { Empty } from "./components/empty";
+import { Error404 } from "./components/error404";
 
 export function App() {
   return (
@@ -12,7 +14,18 @@ export function App() {
           <Link to="/"></Link>
         </header>
         <main>
-          <LandingPage />
+          <Switch>
+            {/* <Route exact path="/movies/:movieId">
+              <MovieDetails />
+            </Route> */}
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+            <Route path="/">
+              <Error404 />
+            </Route>
+          </Switch>
+          
         </main>
       </div>
     </Router>
