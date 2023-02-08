@@ -15,10 +15,6 @@ export function App() {
         </header>
         <main>
           <Switch>
-            <Route exact path="/pelistest">
-              <Redirect to="/" />
-            </Route>
-            
             {/* <Route exact path="/movies/:movieId">
               <MovieDetails />
             </Route> */}
