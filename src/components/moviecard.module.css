@@ -46,6 +46,11 @@ a:active {
   transition: bottom 0.1s ease-in-out, opacity 0.25s ease-in-out;
   bottom: -20px;
   opacity: 0;
+  cursor: default;  
+}
+
+#articles {
+  overflow: hidden;
 }
 
 #articles article:hover .moreInfo {
@@ -73,7 +78,6 @@ a:active {
   position: relative;
   text-transform: uppercase;
   font-size: 15px;
-  cursor: pointer;
   line-height: 1.5;
   width: 100%;
   display: -webkit-box;
